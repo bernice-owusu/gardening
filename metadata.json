@@ -1,0 +1,6 @@
+{
+  "name": "Pots and Palms - Landscaping & Gardening",
+  "description": "Premium Landscaping & Gardening Services website replica with modern outdoor designs, interactive before/after sliders, product shop, and appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
