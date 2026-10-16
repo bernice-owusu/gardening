@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, Phone, Mail, MapPin, CheckCircle, Send } from 'lucide-react';
 import { FAQS, SITE_INFO } from '../data/siteData';
+import { accraGardenConsultant } from '../assets/images';
 
 export const FaqAndConsultationSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -87,7 +88,7 @@ export const FaqAndConsultationSection: React.FC = () => {
               {/* Card Header Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/src/assets/images/accra_garden_consultant_1792067448864.jpg"
+                  src={accraGardenConsultant}
                   alt="Accra landscape architecture consultant"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

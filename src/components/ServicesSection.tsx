@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, X, ArrowRight } from 'lucide-react';
 import { SERVICES, ServiceItem, SITE_INFO } from '../data/siteData';
+import { leaf3, leaf4 } from '../assets/images';
 
 interface ServicesSectionProps {
   onSelectService?: (service: ServiceItem) => void;
@@ -217,14 +218,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         <div className="relative rounded-[28px] bg-[#F4F8F1] py-20 px-6 sm:px-10 lg:px-14 overflow-hidden border border-[#0C2F250A] shadow-xs">
           {/* Top-Left Leaf Background */}
           <img
-            src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/Leaf3.png"
+            src={leaf3}
             alt=""
             className="absolute top-0 left-0 w-44 md:w-60 pointer-events-none select-none z-0 opacity-80"
           />
 
           {/* Top-Right Leaf Background */}
           <img
-            src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/leaf4.png"
+            src={leaf4}
             alt=""
             className="absolute top-0 right-0 w-44 md:w-60 pointer-events-none select-none z-0 opacity-80"
           />

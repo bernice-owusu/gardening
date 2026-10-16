@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { ChevronsLeftRight, Sparkles } from 'lucide-react';
+import { after1_1, befor1_1, flowerDash2 } from '../assets/images';
 
 export const BeforeAfterSection: React.FC = () => {
   const [sliderPosition, setSliderPosition] = useState(50); // percentage 0 - 100
@@ -9,8 +10,8 @@ export const BeforeAfterSection: React.FC = () => {
   // URLs accurately paired:
   // "after1-1.jpg" is the messy unkempt yard with fallen branches & broken pots (BEFORE)
   // "befor1-1.jpg" is the manicured, lush green garden with paved stones & red flower planters (AFTER)
-  const beforeImageUrl = "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/after1-1.jpg";
-  const afterImageUrl = "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/befor1-1.jpg";
+  const beforeImageUrl = after1_1;
+  const afterImageUrl = befor1_1;
 
   const handleMove = useCallback((clientX: number) => {
     if (!containerRef.current) return;
@@ -44,7 +45,7 @@ export const BeforeAfterSection: React.FC = () => {
     <section id="before-after" className="py-20 lg:py-28 bg-[#F4F8F1] relative overflow-hidden">
       {/* Decorative leaf/flower in background */}
       <img
-        src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/Flower-2.png"
+        src={flowerDash2}
         alt=""
         className="absolute top-10 right-4 w-28 lg:w-40 opacity-20 pointer-events-none animate-float"
       />

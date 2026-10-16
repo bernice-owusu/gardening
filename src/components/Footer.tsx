@@ -9,6 +9,7 @@ import {
   Pin as Pinterest 
 } from 'lucide-react';
 import { SITE_INFO } from '../data/siteData';
+import { bg7 } from '../assets/images';
 
 export const Footer: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ export const Footer: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-25"
         style={{
-          backgroundImage: `url('https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/bg7.jpg')`,
+          backgroundImage: `url('${bg7}')`,
         }}
       />
       <div className="absolute inset-0 bg-[#084734]/85" />

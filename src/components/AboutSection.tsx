@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, PhoneCall, ShieldCheck, Sparkles, ArrowRight } from 'lucide-react';
 import { SITE_INFO } from '../data/siteData';
+import { leaf, flo1, leaf2, accraLandscapingTeam } from '../assets/images';
 
 interface AboutSectionProps {
   onLearnMore?: () => void;
@@ -12,12 +13,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onLearnMore, onBookN
     <section id="about" className="relative py-20 lg:py-28 bg-white overflow-hidden">
       {/* Decorative floating leaves in the background */}
       <img
-        src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/Leaf.png"
+        src={leaf}
         alt=""
         className="absolute top-10 right-4 lg:right-16 w-20 lg:w-32 opacity-30 pointer-events-none animate-float"
       />
       <img
-        src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/flo1.png"
+        src={flo1}
         alt=""
         className="absolute bottom-10 left-4 w-16 lg:w-24 opacity-30 pointer-events-none animate-float"
       />
@@ -30,7 +31,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onLearnMore, onBookN
               {/* Main Photo with rounded corners and decorative outline */}
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-[#F4F8F1]">
                 <img
-                  src="/src/assets/images/accra_landscaping_team_1792067449764.jpg"
+                  src={accraLandscapingTeam}
                   alt="Our Accra-based master landscaping team in Cantonments"
                   className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
@@ -53,7 +54,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onLearnMore, onBookN
 
               {/* Decorative Leaf on top-right of image */}
               <img
-                src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/Leaf2.png"
+                src={leaf2}
                 alt=""
                 className="absolute -top-6 -right-6 w-20 h-20 object-contain z-20 pointer-events-none drop-shadow"
               />

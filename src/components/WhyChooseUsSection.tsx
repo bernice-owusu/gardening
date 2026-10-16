@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import { WHY_CHOOSE_US_ITEMS } from '../data/siteData';
+import { chooseShape1_1, chooseShape1_2, maskImg, flower2 } from '../assets/images';
 
 // Authentic 4-leaf clover botanical SVG icon from the Landfixing theme
 const BotanicalCloverIcon: React.FC = () => (
@@ -85,7 +86,7 @@ export const WhyChooseUsSection: React.FC = () => {
 
                   {/* Corner decorative shape */}
                   <img
-                    src="https://dev266.kodesolution.com/landfixing/wp-content/plugins/mascot-core-landfixing/assets/images/current-theme/choose-shape1-1.png"
+                    src={chooseShape1_1}
                     alt=""
                     className="absolute top-2 right-2 w-12 h-12 opacity-25 group-hover:opacity-60 transition-opacity pointer-events-none hidden sm:block"
                   />
@@ -100,7 +101,7 @@ export const WhyChooseUsSection: React.FC = () => {
               {/* Outer decorative arched mask container matching Landfixing */}
               <div className="relative rounded-[48px] rounded-tl-[100px] rounded-br-[100px] overflow-hidden shadow-2xl border-4 border-white ring-8 ring-[#F4F8F1]">
                 <img
-                  src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/mask-img.jpg"
+                  src={maskImg}
                   alt="Lush manicured landscape garden design"
                   className="w-full h-[400px] sm:h-[430px] object-cover transform hover:scale-105 transition-transform duration-700"
                 />
@@ -109,7 +110,7 @@ export const WhyChooseUsSection: React.FC = () => {
 
               {/* Floating Flower Decoration */}
               <img
-                src="https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/flower2.png"
+                src={flower2}
                 alt=""
                 className="absolute -top-7 -right-6 sm:-top-8 sm:-right-8 w-24 h-24 object-contain animate-float pointer-events-none drop-shadow-xl z-20"
               />
@@ -151,7 +152,7 @@ export const WhyChooseUsSection: React.FC = () => {
 
                   {/* Corner decorative shape */}
                   <img
-                    src="https://dev266.kodesolution.com/landfixing/wp-content/plugins/mascot-core-landfixing/assets/images/current-theme/choose-shape1-2.png"
+                    src={chooseShape1_2}
                     alt=""
                     className="absolute top-2 left-2 w-12 h-12 opacity-25 group-hover:opacity-60 transition-opacity pointer-events-none hidden sm:block"
                   />

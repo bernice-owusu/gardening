@@ -32,11 +32,33 @@ export interface FaqItem {
   answer: string;
 }
 
+import {
+  logo,
+  logoWhite,
+  accraClient1,
+  accraClient2,
+  accraClient3,
+  line,
+  serviceShape1_1,
+  serviceShape1_2,
+  chooseShape1_1,
+  chooseShape1_2,
+  ser1,
+  ser2,
+  ser3,
+  ser4,
+  ser4_2,
+  ser1_1,
+  wor1,
+  wor2,
+  wor4,
+} from "../assets/images";
+
 export const SITE_INFO = {
   brandName: "Pots and Palms",
   tagline: "Landscape Architecture & Groundskeeping - Accra",
-  logo: "/src/assets/images/logo.png",
-  logoWhite: "/src/assets/images/logo-white.png",
+  logo,
+  logoWhite,
   phonePrimary: "+233 24 500 5088",
   phoneSecondary: "+233 30 255 0129",
   phoneTel: "tel:+233245005088",
@@ -51,30 +73,19 @@ export const SITE_INFO = {
     pinterest: "https://pinterest.com",
     instagram: "https://instagram.com",
   },
-  decorativeLine: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/Line.png",
-  decorativeFlower: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/Flower.png",
-  serviceShape1: "https://dev266.kodesolution.com/landfixing/wp-content/plugins/mascot-core-landfixing/assets/images/current-theme/service-shape1-1.png",
-  serviceShape2: "https://dev266.kodesolution.com/landfixing/wp-content/plugins/mascot-core-landfixing/assets/images/current-theme/service-shape1-2.png",
-  chooseShape1: "https://dev266.kodesolution.com/landfixing/wp-content/plugins/mascot-core-landfixing/assets/images/current-theme/choose-shape1-1.png",
-  chooseShape2: "https://dev266.kodesolution.com/landfixing/wp-content/plugins/mascot-core-landfixing/assets/images/current-theme/choose-shape1-2.png",
+  decorativeLine: line,
+  serviceShape1: serviceShape1_1,
+  serviceShape2: serviceShape1_2,
+  chooseShape1: chooseShape1_1,
+  chooseShape2: chooseShape1_2,
 };
-
-export const CLIENT_LOGOS = [
-  { id: "cli1", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli1.png", alt: "Client 1" },
-  { id: "cli2", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli2.png", alt: "Client 2" },
-  { id: "cli3", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli3.png", alt: "Client 3" },
-  { id: "cli4", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli4.png", alt: "Client 4" },
-  { id: "cli5", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli5.png", alt: "Client 5" },
-  { id: "cli6", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli6.png", alt: "Client 6" },
-  { id: "cli7", src: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/cli7.png", alt: "Client 7" },
-];
 
 export const SERVICES: ServiceItem[] = [
   {
     id: "design-planning",
     title: "Landscape Design & Planning",
     category: "Architecture & Blueprint",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/ser4.jpg",
+    image: ser4,
     excerpt: "Customized 3D architectural blueprints, tropical plant palettes, and sun/shade hydrological grading for Accra estates.",
     details: "We conceptualize and detail complete residential landscape architecture in Accra, incorporating tropical topography grading, soil drainage, seasonal color palettes, and outdoor functional spaces."
   },
@@ -82,7 +93,7 @@ export const SERVICES: ServiceItem[] = [
     id: "lawn-care",
     title: "Lawn Care & Maintenance",
     category: "Turf Care",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/ser3.jpg",
+    image: ser3,
     excerpt: "Precision edging, deep core aeration, organic weed control, and balanced tropical climate fertilization.",
     details: "Our recurring lawn maintenance packages keep your grass resilient against Accra's seasonal Harmattan dry spells and heavy rain season stress."
   },
@@ -90,7 +101,7 @@ export const SERVICES: ServiceItem[] = [
     id: "turfing-services",
     title: "Professional Turfing Services",
     category: "Sod & Turf",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/ser2.jpg",
+    image: ser2,
     excerpt: "Drought-hardy Bermuda & Zoysia sod rollouts and ultra-resilient artificial turf with engineered sub-drainage.",
     details: "Whether installing natural heat-hardy sod or luxury all-weather synthetic grass for private residences, our installation process guarantees seamless seams and immediate green results."
   },
@@ -98,7 +109,7 @@ export const SERVICES: ServiceItem[] = [
     id: "garden-installation",
     title: "Garden Installation",
     category: "Botany & Soil",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/ser1.jpg",
+    image: ser1,
     excerpt: "Exotic bougainvillea, traveler's palms, nutrient compost blends, and water-conserving micro-drip irrigation.",
     details: "We source top-tier nursery specimens, enrich local coastal savannah soil with nutrient-rich compost, and create thriving ecological micro-habitats that bloom year-round."
   },
@@ -106,7 +117,7 @@ export const SERVICES: ServiceItem[] = [
     id: "hardscape-patio",
     title: "Hardscape & Patio Design",
     category: "Masonry & Stone",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/ser4-2.jpg",
+    image: ser4_2,
     excerpt: "Granite walkways, polished terrazzo terraces, structural retaining walls, pergolas, and outdoor fire pits.",
     details: "Our masonry artisans build durable outdoor entertainment living rooms featuring natural sandstone, granite curbing, permeable pavers, and custom outdoor kitchen islands."
   }
@@ -142,7 +153,7 @@ export const WORKING_STEPS: WorkingStep[] = [
     timeframe: "Days 1–3",
     description: "We meet at your property in Accra to examine soil pH, sun/shade gradients, drainage slope, and map out your family's outdoor lifestyle aspirations.",
     deliverable: "Comprehensive Topography & Soil Audit",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/wor1.jpg"
+    image: wor1
   },
   {
     step: "Phase 02",
@@ -150,7 +161,7 @@ export const WORKING_STEPS: WorkingStep[] = [
     timeframe: "Week 2",
     description: "Our landscape architects model photorealistic 3D visual renders, tropical plant palettes, stone paver mockups, and fixed-price line items.",
     deliverable: "3D Virtual Walkthrough & Fixed Bid",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/ser1-1.jpg"
+    image: ser1_1
   },
   {
     step: "Phase 03",
@@ -158,7 +169,7 @@ export const WORKING_STEPS: WorkingStep[] = [
     timeframe: "Weeks 3–4",
     description: "Our dedicated Accra crew executes site grading, sub-base compaction, natural stonework, sod installation, and planting with daily cleanups.",
     deliverable: "Precision Stonework & Fresh Sod",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/wor2.jpg"
+    image: wor2
   },
   {
     step: "Phase 04",
@@ -166,7 +177,7 @@ export const WORKING_STEPS: WorkingStep[] = [
     timeframe: "Day 30+",
     description: "We conduct an evening lighting inspection, calibrate smart automated irrigation, and provide a customized seasonal yard care handbook.",
     deliverable: "5-Year Warranty & Seasonal Care Plan",
-    image: "https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/wor4.jpg"
+    image: wor4
   }
 ];
 
@@ -177,7 +188,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: "Villa Owner in Cantonments, Accra",
     project: "Full Private Garden Redesign & Stone Terrace",
     quote: "Pots and Palms completely transformed our home in Cantonments. The lush grass turf, tropical palm arrangements, and elegant stone walkways have turned our garden into our favorite retreat in Accra.",
-    avatar: "/src/assets/images/accra_client_1_1792067274044.jpg",
+    avatar: accraClient1,
     rating: 5,
     date: "Verified Homeowner • Cantonments, Accra"
   },
@@ -187,7 +198,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: "Architectural Client, East Legon",
     project: "Drought-Resilient Zoysia Turf & Pergola",
     quote: "As an architect here in Accra, I pay extreme attention to grading, seam lines, and drainage during rainy seasons. Pots and Palms' team was punctual, highly skilled, and their craftsmanship exceeded all standards.",
-    avatar: "/src/assets/images/accra_client_2_1792067298320.jpg",
+    avatar: accraClient2,
     rating: 5,
     date: "Verified Client • East Legon, Accra"
   },
@@ -197,7 +208,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: "Estate Property Director, Airport Residential Area",
     project: "Commercial Grounds & Automated Drip System",
     quote: "Their team manages our multi-residence estate grounds in Airport Residential. The smart automated drip network reduced our water expenditure substantially while keeping the lawns immaculate year-round.",
-    avatar: "/src/assets/images/accra_client_3_1792067320798.jpg",
+    avatar: accraClient3,
     rating: 5,
     date: "Estate Client • Airport Residential, Accra"
   }

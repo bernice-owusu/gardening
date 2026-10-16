@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { TESTIMONIALS } from '../data/siteData';
+import { bg9 } from '../assets/images';
 
 export const TestimonialsSection: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +22,7 @@ export const TestimonialsSection: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10 pointer-events-none"
         style={{
-          backgroundImage: `url('https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/bg9.jpg')`,
+          backgroundImage: `url('${bg9}')`,
         }}
       />
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-[#195D49]/30 rounded-full blur-3xl pointer-events-none" />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Sparkles, ShieldCheck } from 'lucide-react';
+import { bg6 } from '../assets/images';
 
 interface CtaBannerSectionProps {
   onGetQuote: () => void;
@@ -12,7 +13,7 @@ export const CtaBannerSection: React.FC<CtaBannerSectionProps> = ({ onGetQuote }
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/bg6.jpg')`,
+          backgroundImage: `url('${bg6}')`,
         }}
       >
         <div className="absolute inset-0 bg-[#053627]/85 backdrop-blur-xs" />

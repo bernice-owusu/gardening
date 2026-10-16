@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Play, ArrowRight, Sparkles } from "lucide-react";
 import { SITE_INFO } from "../data/siteData";
+import { bg1, accraTeam } from "../assets/images";
 
 interface HeroSectionProps {
   onOpenVideo: () => void;
@@ -38,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
         style={{
-          backgroundImage: `url('https://dev266.kodesolution.com/landfixing/wp-content/uploads/2026/09/bg1.jpg')`,
+          backgroundImage: `url('${bg1}')`,
         }}
       >
         {/* Soft gradient wash over the background */}
@@ -102,7 +103,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Image Thumbnail with Rounded border */}
               <div className="relative w-64 sm:w-72 md:w-80 h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 backdrop-blur-sm transform transition-transform group-hover:scale-[1.02]">
                 <img
-                  src="/src/assets/images/accra_team_1792067253706.jpg"
+                  src={accraTeam}
                   alt="Accra groundskeeping team showcase"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
