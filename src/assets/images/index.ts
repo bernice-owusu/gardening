@@ -18,23 +18,23 @@ import leaf4 from "./leaf4.png";
 
 import ser1 from "./ser1.jpg";
 import ser2 from "./ser2.jpg";
-import ser3 from "./ser3.jpg";
+import ser3 from "./ser3.png";
 import ser4 from "./ser4.jpg";
 import ser4_2 from "./ser4-2.jpg";
-import ser1_1 from "./ser1-1.jpg";
-import wor1 from "./wor1.jpg";
-import wor2 from "./wor2.jpg";
+import ser1_1 from "./ser1-1.png";
+import wor1 from "./work1.png";
+import wor2 from "./work2.png";
 import wor4 from "./wor4.jpg";
 
 import after1_1 from "./after1-1.jpg";
 import befor1_1 from "./befor1-1.jpg";
 
 import bg1 from "./bg1.jpg";
-import bg6 from "./bg6.jpg";
+import bg6 from "./bg6.png";
 import bg7 from "./bg7.jpg";
 import bg9 from "./bg9.jpg";
 
-import maskImg from "./mask-img.jpg";
+import maskImg from "./mask_img.png";
 
 import serviceShape1_1 from "./service-shape1-1.png";
 import serviceShape1_2 from "./service-shape1-2.png";
